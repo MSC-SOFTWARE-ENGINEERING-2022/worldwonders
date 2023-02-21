@@ -1,0 +1,57 @@
+.wonderCard {
+  color: #363636;
+  background: rgba(255, 255, 255, 0.507);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  align-self: center;
+}
+.wonderCard:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0 7px 50px 10px rgba(0, 0, 0, 0.6666666667);
+  cursor: pointer;
+}
+
+.containerWonder {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  animation: centerDiv 1.5s;
+  animation-fill-mode: forwards;
+}
+.containerWonder .card {
+  color: #363636;
+  background: rgba(255, 255, 255, 0.507);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  width: 50rem;
+}
+.containerWonder .card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0 7px 50px 10px rgba(0, 0, 0, 0.6666666667);
+  cursor: pointer;
+}
+
+@keyframes centerDiv {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 51%;
+    margin-top: 30px;
+  }
+}

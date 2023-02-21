@@ -1,0 +1,75 @@
+.col,
+.border,
+.bg-light {
+  border: none !important;
+  background: none !important;
+  opacity: 1;
+}
+
+.wonders .title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.wonders #sw,
+.wonders #en {
+  height: 20px !important;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1em;
+}
+.wonders .wonderCol .card {
+  margin: 0 auto !important;
+}
+.wonders .btnCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerMain {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+  align-items: center;
+  display: flex;
+  flex-direction: column !important;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.containerMain .btnDiv {
+  border: 2px solid rgb(146, 146, 146) !important;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.507);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  margin: 20px auto;
+}
+.containerMain .btnDiv .btnWonders {
+  background-color: transparent;
+  font-size: 10px;
+  padding: 0;
+  margin: 5px 5px;
+  border: none;
+  color: black;
+  min-width: 100px;
+  transform: scale(0.6);
+  transition: all 0.9s ease;
+}
+.containerMain .btnDiv .btnWonders .btnDetails {
+  visibility: hidden;
+}
+.containerMain .btnDiv .btnWonders:hover, .containerMain .btnDiv .btnWonders.activeWonder {
+  transform: scale(1);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.5333333333);
+}
+.containerMain .btnDiv .btnWonders:hover .btnDetails, .containerMain .btnDiv .btnWonders.activeWonder .btnDetails {
+  visibility: visible;
+}
+.containerMain .btnDiv .btnWonders.activeWonder {
+  font-weight: bold;
+}

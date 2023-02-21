@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+"liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+}

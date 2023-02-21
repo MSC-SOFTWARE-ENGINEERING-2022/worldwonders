@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "header": {
+      "en": "The eight wonders of the world",
+      "sw": "Maajabu manane ya dunia"
+    },
+    "institution": {
+      "en": "Jomo Kenyatta University of Science and Technology",
+      "es": "Chuo Kikuu cha Sayansi na Teknolojia cha Jomo Kenyatta"
+    },
+    "course": {
+      "en": "Masters of Science in Software Engineering",
+      "es": "Uzamili wa Sayansi katika Uhandisi wa Programu"
+    },
+    "unit": "ICS 3107: HCI",
+    "editors": [
+      { "name": "Sakawa Bob", "adm": "" },
+      { "name": "Bett Festus", "adm": "" },
+      { "name": "Kololi Beverly", "adm": "" },
+      { "name": "Ngure Brian", "adm": "" }
+    ]
+  },
+  "data": [
+    {
+      "id": "colosseum",
+      "name": {
+        "en": "The Colosseum",
+        "sw": "Ukumbi wa Colosseum"
+      },
+      "location": {
+        "en": "Rome, Italy",
+        "sw": "Roma, Italia"
+      },
+      "desc": {
+        "en": "The Colosseum is the great oval amphitheater in the center of Rome where gladiators once fought for their life. The largest amphitheater ever built, it was constructed from sand and stone over eight years, from AD72 to AD80. The colossal structure could hold 80,000 spectators, arranged in a circular ring around the central stage. Dramatic and sometimes horrifying events took place here, not just gladiatorial games, but also Classical plays, animal hunts and executions. Some say water was even pumped into the arena to enact mock sea battles. Partially damaged by earthquakes and stone robbers over the centuries, the Colosseum is still an iconic memento of Roman history, visited by thousands of tourists every year, so it stands to reason it would make the list of today's seven wonders of the world.",
+        "sw": "Colosseum ni ukumbi mkubwa wa michezo wa mviringo katikati ya Roma ambapo wapiganaji walipigania maisha yao mara moja. Ukumbi mkubwa zaidi wa michezo uliowahi kujengwa, ulijengwa kwa mchanga na mawe zaidi ya miaka minane, kutoka AD72 hadi AD80. Muundo huo mkubwa unaweza kuchukua watazamaji 80,000, uliopangwa katika pete ya duara kuzunguka jukwaa la kati. Matukio ya kushangaza na wakati mwingine ya kutisha yalifanyika hapa, si tu michezo ya gladiatorial, lakini pia michezo ya Classical, uwindaji wa wanyama na mauaji. Wengine wanasema maji hata yalisukumwa kwenye uwanja ili kutekeleza mapigano ya baharini. Imeharibiwa kwa kiasi na matetemeko ya ardhi na wanyang'anyi wa mawe kwa karne nyingi, Colosseum bado ni kumbukumbu ya kihistoria ya Kirumi, inayotembelewa na maelfu ya watalii kila mwaka, kwa hivyo inafaa kuorodhesha maajabu saba ya ulimwengu."
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2021/12/colosseum-world-wonder-national-geographic.jpg?width=1200&quality=55",
+      "icon": {
+        "en": "Colosseum",
+        "sw": "Colosseum"
+      }
+    },
+    {
+      "id": "wall",
+      "name": {
+        "en": "The Great Wall",
+        "sw": "Ukuta Mkuu"
+      },
+      "location": {
+        "en": "China",
+        "sw": "Uchina"
+      },
+      "desc": {
+        "en": "A huge barrier that spans thousands of miles along China's historic northern border. Created over millennia, the wall began its life as a series of smaller walls dating back to the 7th century BCE, built as protective barriers against nomadic raids. In 220 BCE, China's first Emperor Qin Shi Huang masterminded the unification of all China's walls into one almighty barrier, strengthening and extending the wall to keep out northern invaders. Today the wall is recognized as one of the seven wonders, which, including all its branches, measures a whopping 13,171 miles.",
+        "sw": "Kizuizi kikubwa ambacho kinapita maelfu ya maili kwenye mpaka wa kihistoria wa kaskazini wa China. Ukuta ulioundwa kwa milenia nyingi, ulianza maisha yake kama safu ya kuta ndogo zilizoanzia karne ya 7 KK, zilizojengwa kama vizuizi vya ulinzi dhidi ya uvamizi wa kuhamahama. Mnamo mwaka wa 220 KK, Mfalme wa kwanza wa China Qin Shi Huang alipanga kuunganishwa kwa kuta zote za China kuwa kizuizi kimoja kikuu, kuimarisha na kupanua ukuta ili kuzuia wavamizi wa kaskazini. Leo ukuta huo unatambuliwa kama moja ya maajabu saba, ambayo, pamoja na matawi yake yote, yana urefu wa maili 13,171"
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2021/12/great-wall-china-national-geographic.jpg?width=1200&quality=55",
+      "icon": {
+        "en": "Wall",
+        "sw": "Ukuta"
+      }
+    },
+    {
+      "id": "taj",
+      "name": {
+        "en": "The Taj Mahal",
+        "sw": "Taj Mahal"
+      },
+      "location": {
+        "en": "India",
+        "sw": "India"
+      },
+      "desc": {
+        "en": "India's renowned Taj Mahal (Persian for Crown of Palaces) is the stunning white marble mausoleum on the bank of the Yamuna River in the city of Agra, and it has been selected as one of the seven wonders of the world. Mughal emperor, Shah Jahan built the temple as a tomb for his beloved wife Mumtaz Mahal, who died during childbirth in 1631. A marble tomb in the center is surrounded by 42 acres of grounds, where gardens, a mosque, guest house and pool complete the complex. The entire project took over 22 years to complete by 20,000 workers at a cost of 32 million rupees (around US$827 million by today's standards). But the hard work paid off - today the Taj Mahal is recognized as a UNESCO World Heritage Site, and a vital component of India's rich Mughal history.",
+        "sw": "Taj Mahal mashuhuri (Kiajemi kwa Taji la Majumba) ni kaburi la kuvutia la marumaru nyeupe kwenye ukingo wa Mto Yamuna katika jiji la Agra, na limechaguliwa kuwa mojawapo ya maajabu saba ya dunia. Mfalme wa Mughal, Shah Jahan alijenga hekalu kama kaburi la mke wake mpendwa Mumtaz Mahal, ambaye alikufa wakati wa kujifungua mwaka wa 1631. Kaburi la marumaru katikati limezungukwa na ekari 42 za uwanja, ambapo bustani, msikiti, nyumba ya wageni na bwawa hukamilika tata. Mradi mzima ulichukua zaidi ya miaka 22 kukamilika kwa wafanyakazi 20,000 kwa gharama ya rupia milioni 32 (karibu dola za Marekani milioni 827 kwa viwango vya leo). Lakini kazi ngumu ilizaa matunda - leo Taj Mahal inatambuliwa kama Tovuti ya Urithi wa Dunia wa UNESCO, na sehemu muhimu ya historia tajiri ya Mughal ya India."
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2021/12/the-taj-mahal-architectural-digest.jpg?width=1200&quality=55",
+      "icon": {
+        "en": "Taj",
+        "sw": "Taj"
+      }
+    },
+    {
+      "id": "christ",
+      "name": {
+        "en": "Christ the Redeemer",
+        "sw": "Kristo Mkombozi"
+      },
+      "location": {
+        "en": "Brazil",
+        "sw": "Brazili"
+      },
+      "desc": {
+        "en": "The totemic statue of Christ the Redeemer stands over Rio de Janeiro on the top of Mount Corcovado. At 30 meters tall, this monument is an iconic emblem of Brazil. This huge public artwork was designed by the Polish-French sculptor Paul Landowski in the 1920s and completed by Brazilian engineer Heitor da Silva Costa, and French engineer Albert Caquot in 1931. Made from reinforced concrete clad in over 6 million soapstone tiles, Christ the Redeemer is the largest Art Deco sculpture in the world. Built just after the end of the First World War, the sculpture was an overpowering symbol of Christianity and hope when the world had been brought to its knees, so its no surprise that this monument made the list for today's seven wonders.",
+        "sw": "Sanamu ya totemic ya Kristo Mkombozi imesimama juu ya Rio de Janeiro juu ya Mlima Corcovado. Mnara huu wa ukumbusho ukiwa na urefu wa mita 30 ni nembo ya kipekee ya Brazili. Mchoro huu mkubwa wa umma uliundwa na mchongaji wa Kipolishi-Ufaransa Paul Landwski katika miaka ya 1920 na kukamilishwa na mhandisi Mbrazili Heitor da Silva Costa, na mhandisi Mfaransa Albert Caquot mnamo 1931. Iliundwa kwa saruji iliyoimarishwa iliyofunikwa kwa zaidi ya vigae milioni 6 vya mawe ya sabuni, Christ the Redemer. ni sanamu kubwa zaidi ya Art Deco duniani. Ilijengwa mara tu baada ya kumalizika kwa Vita vya Kwanza vya Kidunia, sanamu hiyo ilikuwa ishara kuu ya Ukristo na tumaini wakati ulimwengu ulikuwa umepigishwa magoti, kwa hivyo haishangazi kwamba sanamu hii ilifanya orodha ya maajabu saba ya leo."
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2021/12/christ-the-redeemer-statue-rio-1-scaled.jpg?width=1200&quality=55",
+      "icon": {
+        "en": "Christ",
+        "sw": "Kristo"
+      }
+    },
+    {
+      "id": "machu",
+      "name": {
+        "en": "Machu Picchu",
+        "sw": "Machu Picchu"
+      },
+      "location": {
+        "en": "Peru",
+        "sw": "Peru"
+      },
+      "desc": {
+        "en": "Machu Picchu is a lost treasure of the 15th century, a rare citadel discovered high in the Andes mountains above the Peruvian Sacred Valley. Astonishingly, it is one of the only pre-Columbian ruins found nearly intact, featuring evidence of former plazas, temples, agricultural terraces and homes. Archaeologists believe the citadel was built as an estate for the Inca emperor Pachacuti in around 1450 in polished drystone walls. The Incas abandoned the site a century later and it remained hidden for millennia, before being brought to public attention by American historian Hiram Bingham in 1911. Because of this remarkable preservation, it is recognized today as one of the seven wonders.",
+        "sw": "Machu Picchu ni hazina iliyopotea ya karne ya 15, ngome adimu iliyogunduliwa juu katika milima ya Andes juu ya Bonde Takatifu la Peru. Kwa kushangaza, ni mojawapo ya magofu ya kabla ya Columbian yaliyopatikana karibu kabisa, yenye ushahidi wa plaza za zamani, mahekalu, matuta ya kilimo na nyumba. Wanaakiolojia wanaamini kuwa ngome hiyo ilijengwa kama shamba la mfalme wa Inca Pachacuti karibu 1450 katika kuta za mawe kavu yaliyong'aa. Wainka waliacha eneo hilo karne moja baadaye na likabaki limefichwa kwa milenia kadhaa, kabla ya kuletwa hadharani na mwanahistoria wa Kiamerika Hiram Bingham mwaka wa 1911. Kwa sababu ya uhifadhi huu wa ajabu, linatambuliwa leo kuwa mojawapo ya maajabu saba."
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2021/12/machu-picchu-world-wonder.jpg?width=1200&quality=55",
+      "icon": {
+        "en": "Machu",
+        "sw": "Machu"
+      }
+    },
+    {
+      "id": "chichen",
+      "name": {
+        "en": "Chichén Itzá",
+        "sw": "Chichén Itzá"
+      },
+      "location": {
+        "en": "Mexico",
+        "sw": "Mexico"
+      },
+      "desc": {
+        "en": "Deep in the Mexican state of Yucatán lies Chichen Itza, a historic Mayan city built between the 9th and 12th centuries. Constructed by the pre-Columbian Mayan tribe Itzá, the city includes a series of monuments and temples. The most celebrated is El Castillo, also known as the Temple of Kukulcan. It is a huge step pyramid in the center of the city which was built as a devotional temple to the god Kukulkan. In total, the entire temple features 365 steps, one for each day of the year. Even more impressively, during the spring and summer equinoxes, afternoon sun casts triangular shadows down the pyramid's north stairway that resemble a feathered serpent slithering down its surface, heading towards a stone snake head at the base - no wonder it is one of the seven wonders today!",
+        "sw": "Ndani kabisa ya jimbo la Mexico la Yucatán kuna Chichen Itza, jiji la kihistoria la Mayan lililojengwa kati ya karne ya 9 na 12. Ilijengwa na kabila la Mayan kabla ya Columbian Itzá, jiji hilo linajumuisha safu ya makaburi na mahekalu. Inayoadhimishwa zaidi ni El Castillo, pia inajulikana kama Hekalu la Kukulcan. Ni piramidi kubwa ya hatua katikati ya jiji ambayo ilijengwa kama hekalu la ibada kwa mungu Kukulkan. Kwa jumla, hekalu zima lina ngazi 365, moja kwa kila siku ya mwaka. Cha kustaajabisha zaidi, wakati wa majira ya ikwinoksi za masika na kiangazi, jua la alasiri hutupa vivuli vya pembe tatu chini ya ngazi ya kaskazini ya piramidi inayofanana na nyoka mwenye manyoya anayeteleza chini kwenye uso wake, akielekea kwenye kichwa cha nyoka wa jiwe kwenye msingi - haishangazi kuwa ni moja ya maajabu saba. leo!"
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2021/12/chichen-itza-image-1-1.jpg?width=1400&quality=55",
+      "icon": {
+        "en": "Chichen",
+        "sw": "Chichen"
+      }
+    },
+    {
+      "id": "petra",
+      "name": {
+        "en": "Petra",
+        "sw": "Petra"
+      },
+      "location": {
+        "en": "Jordan",
+        "sw": "Yordani"
+      },
+      "desc": {
+        "en": "The ancient city in southern Jordan is also known as the 'rose city' for its golden hue. It dates as far back as 312BC. Set in a remote valley, this ancient city was founded by the Arab Nabataeans, a sophisticated civilization who carved stunning architecture and complex waterways out of surrounding rock faces. The Nabateans also established Petra as a successful trade hub, earning vast wealth and a booming population before being wiped out by earthquakes. Unknown to the Western world for centuries, the city was uncovered in 1812 by Swiss explorer Johann Ludwig Burckhardt. 19th century poet and scholar John William Burgon described Petra as 'a rose-red city half as old as time.'",
+        "sw": "Mji wa kale ulioko kusini mwa Yordani pia unajulikana kama 'mji wa waridi' kwa rangi yake ya dhahabu. Ilianza nyuma kama 312BC. Ukiwa katika bonde la mbali, jiji hili la kale lilianzishwa na Wanabataea Waarabu, ustaarabu wa hali ya juu ambao walichonga usanifu wa ajabu na njia ngumu za maji kutoka kwa nyuso za miamba iliyozunguka. Wananabate pia walianzisha Petra kama kitovu cha biashara kilichofanikiwa, wakipata utajiri mwingi na idadi kubwa ya watu kabla ya kuangamizwa na matetemeko ya ardhi. Bila kujulikana kwa ulimwengu wa Magharibi kwa karne nyingi, jiji hilo liligunduliwa mnamo 1812 na mvumbuzi wa Uswisi Johann Ludwig Burckhardt. Mshairi na msomi wa karne ya 19 John William Burgon alieleza Petra kuwa 'jiji la waridi lenye umri wa nusu ya zamani.'"
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2021/12/petra-jordan-world-wonder-scaled-1.jpg?width=1200&quality=55",
+      "icon": {
+        "en": "Petra",
+        "sw": "Petra"
+      }
+    },
+    {
+      "id": "pyramid",
+      "name": {
+        "en": "The Great Pyramid of Giza",
+        "sw": "Piramidi Kuu ya Giza"
+      },
+      "location": {
+        "en": "Egypt",
+        "sw": "Misri"
+      },
+      "desc": {
+        "en": "The Great Pyramid of Giza in Ancient Egypt is the only of the 7 Wonders of the Ancient World to have passed the test of time. The pyramid is a monumental tomb (146,5 meters tall) built around 2500 BCE for Pharaoh Khufu, and is still standing, even after 4500 years. Its making was a true marvel of ancient engineering; a demanding endeavor that required more than 2.3 million blocks of stone to be quarried and transported from different locations. In addition, the pyramid had a casing of white limestone, giving it a different appearance than the one we are used to seeing today.",
+        "sw": "Piramidi Kuu ya Giza katika Misri ya Kale ndiyo pekee kati ya Maajabu 7 ya Ulimwengu wa Kale ambayo yamepita mtihani wa wakati. Piramidi ni kaburi kubwa (urefu wa mita 146,5) lililojengwa karibu 2500 BCE kwa Farao Khufu, na bado limesimama, hata baada ya miaka 4500. Uundaji wake ulikuwa wa ajabu wa uhandisi wa kale; juhudi kubwa iliyohitaji zaidi ya matofali milioni 2.3 ya mawe yachimbwe na kusafirishwa kutoka maeneo tofauti. Kwa kuongezea, piramidi hiyo ilikuwa na ganda la chokaa nyeupe, na kuifanya iwe na mwonekano tofauti na ule ambao tumezoea kuona leo."
+      },
+      "image": "https://cdn.thecollector.com/wp-content/uploads/2020/12/pyramid-khufu-egypt-photo.jpg?width=1200&quality=55",
+      "icon": {
+        "en": "Pyramid",
+        "sw": "Pyramid"
+      }
+    }
+  ]
+}
