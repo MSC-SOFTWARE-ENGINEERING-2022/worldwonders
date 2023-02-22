@@ -44,6 +44,7 @@ export default function Wonders() {
     <>
       <h3>{dt.institution[ln]}</h3>
       <h5>{dt.course[ln]}</h5>
+      <h5>{dt.unit}</h5>
       <p>{dt.labels.credits[ln]}</p>
       <ol>
         {dt.editors.map((ed) => (

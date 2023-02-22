@@ -6,11 +6,11 @@
     },
     "institution": {
       "en": "Jomo Kenyatta University of Science and Technology",
-      "es": "Chuo Kikuu cha Sayansi na Teknolojia cha Jomo Kenyatta"
+      "sw": "Chuo Kikuu cha Sayansi na Teknolojia cha Jomo Kenyatta"
     },
     "course": {
       "en": "Masters of Science in Software Engineering",
-      "es": "Uzamili wa Sayansi katika Uhandisi wa Programu"
+      "sw": "Uzamili wa Sayansi katika Uhandisi wa Programu"
     },
     "unit": "ICS 3107: HCI",
     "editors": [
