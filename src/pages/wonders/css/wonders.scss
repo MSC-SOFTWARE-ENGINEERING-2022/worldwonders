@@ -53,11 +53,14 @@
 
   .btnDiv {
     border: 2px solid rgb(146, 146, 146) !important;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.507);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    margin: 20px auto;
+    // margin: auto;
+    &:hover {
+      backdrop-filter: blur(5px);
+    }
     .btnWonders {
       background-color: transparent;
       font-size: 10px;
@@ -65,7 +68,7 @@
       margin: 5px 5px;
       border: none;
       color: black;
-      min-width: 100px;
+      //   min-width: 100px;
       // transform: translate(-50%);
       transform: scale(0.6);
       transition: all 0.9s ease;

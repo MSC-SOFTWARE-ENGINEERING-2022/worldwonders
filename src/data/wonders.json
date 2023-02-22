@@ -14,11 +14,14 @@
     },
     "unit": "ICS 3107: HCI",
     "editors": [
-      { "name": "Sakawa Bob", "adm": "" },
-      { "name": "Bett Festus", "adm": "" },
-      { "name": "Kololi Beverly", "adm": "" },
-      { "name": "Ngure Brian", "adm": "" }
-    ]
+      { "name": "Sakawa Bob", "adm": "SCT313-1831/2022" },
+      { "name": "Bett Festus", "adm": "SCT313-1622/2022" },
+      { "name": "Kololi Beverly", "adm": "SCT313-1729/2022" },
+      { "name": "Ngure Brian", "adm": "SCT313-0919/2022" }
+    ],
+    "labels": {
+      "credits": { "en": "Credits", "sw": "Vibali" }
+    }
   },
   "data": [
     {
