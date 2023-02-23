@@ -11,12 +11,21 @@ export default function Wonders() {
   const [selectedWonder, setSelectedWonder] = useState("");
   const [metadata, setMetadata] = useState("");
   const [lang, setLang] = useState("en");
+  const [position, setPosition] = useState("top");
 
   const changeLang = (e) => {
     e.preventDefault();
     const id = e.target.id;
     if (id !== lang) {
       setLang(e.target.id);
+    }
+  };
+
+  const changePosition = (e) => {
+    e.preventDefault();
+    const id = e.target.id;
+    if (id !== position) {
+      setPosition(e.target.id);
     }
   };
 
@@ -65,6 +74,54 @@ export default function Wonders() {
     setSelectedWonder(datos[Math.floor(Math.random() * datos.length)]);
   }, []);
 
+  const menuRow = (
+    <Col
+      className="bg-light border btnCol"
+      lg={{
+        offset: 3,
+        size: 6,
+      }}
+      sm="12"
+    >
+      <div className="btnDiv">
+        {allWonders &&
+          allWonders.map((aw) => (
+            <button
+              key={aw.id}
+              id={aw.id}
+              onClickCapture={selectWonder}
+              className={`btnWonders ${
+                selectedWonder && selectedWonder.id === aw.id && "activeWonder"
+              }`}
+            >
+              <div className="btnDetails">{aw.icon[lang]}</div>
+              <img src={`${CONFIGS.icons}/${aw.id}/64.png`}></img>
+            </button>
+          ))}
+      </div>
+    </Col>
+  );
+
+  const contentRow = (
+    <Col
+      className="bg-light border btnCol"
+      lg={{
+        offset: 3,
+        size: 6,
+      }}
+      sm="12"
+    >
+      <Container
+        className="containerMain"
+        style={{
+          backgroundImage: `url(${selectedWonder.image})`,
+        }}
+      >
+        {selectedWonder && <Wonder itemData={selectedWonder} lang={lang} />}
+      </Container>
+    </Col>
+  );
+
   return (
     <>
       <Container className=" wonders bg-light border" fluid>
@@ -97,74 +154,36 @@ export default function Wonders() {
                 EN
               </Button>
             </ButtonGroup>
+            <br />
+            <ButtonGroup className="my-2" size="sm">
+              <Button color="danger" onClick={changePosition} id="top">
+                Top
+              </Button>
+              <Button color="warning" onClick={changePosition} id="bottom">
+                Bottom
+              </Button>
+              <Button color="success">Left</Button>
+              <Button color="danger">Right</Button>
+            </ButtonGroup>
+          </Col>
+        </Row>
+        <Row>{position === "top" ? menuRow : contentRow}</Row>
+        <Row>{position === "top" ? contentRow : menuRow}</Row>
+        <Row>
+          <Col
+            className="bg-light border"
+            lg={{
+              offset: 3,
+              size: 6,
+            }}
+            sm="12"
+          >
             <CustomModal
               btnName={metadata && metadata.labels.credits[lang]}
               modalBd={metadata && modalBd(metadata, lang)}
             />
           </Col>
         </Row>
-        <Row>
-          <Col
-            className="bg-light border btnCol"
-            lg={{
-              offset: 3,
-              size: 6,
-            }}
-            sm="12"
-          >
-            <div className="btnDiv">
-              {allWonders &&
-                allWonders.map((aw) => (
-                  <button
-                    key={aw.id}
-                    id={aw.id}
-                    onClickCapture={selectWonder}
-                    className={`btnWonders ${
-                      selectedWonder &&
-                      selectedWonder.id === aw.id &&
-                      "activeWonder"
-                    }`}
-                  >
-                    <div className="btnDetails">{aw.icon[lang]}</div>
-                    <img src={`${CONFIGS.icons}/${aw.id}/64.png`}></img>
-                  </button>
-                ))}
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            className="bg-light border btnCol"
-            lg={{
-              offset: 3,
-              size: 6,
-            }}
-            sm="12"
-          >
-            <Container
-              className="containerMain"
-              style={{
-                backgroundImage: `url(${selectedWonder.image})`,
-              }}
-            >
-              {selectedWonder && (
-                <Wonder itemData={selectedWonder} lang={lang} />
-              )}
-            </Container>
-          </Col>
-        </Row>
-        {/* <Row>
-          <Col
-            className="wonderCol bg-light border"
-            lg={{
-              offset: 3,
-              size: 6,
-            }}
-            sm="12"
-          >
-            {selectedWonder && <Wonder itemData={selectedWonder} lang={lang} />}
-          </Col>
-        </Row> */}
       </Container>
     </>
   );
