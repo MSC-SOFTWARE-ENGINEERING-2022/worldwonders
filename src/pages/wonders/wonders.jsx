@@ -112,30 +112,41 @@ export default function Wonders() {
             }}
             sm="12"
           >
+            <div className="btnDiv">
+              {allWonders &&
+                allWonders.map((aw) => (
+                  <button
+                    key={aw.id}
+                    id={aw.id}
+                    onClickCapture={selectWonder}
+                    className={`btnWonders ${
+                      selectedWonder &&
+                      selectedWonder.id === aw.id &&
+                      "activeWonder"
+                    }`}
+                  >
+                    <div className="btnDetails">{aw.icon[lang]}</div>
+                    <img src={`${CONFIGS.icons}/${aw.id}/64.png`}></img>
+                  </button>
+                ))}
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            className="bg-light border btnCol"
+            lg={{
+              offset: 3,
+              size: 6,
+            }}
+            sm="12"
+          >
             <Container
               className="containerMain"
               style={{
                 backgroundImage: `url(${selectedWonder.image})`,
               }}
             >
-              <div className="btnDiv">
-                {allWonders &&
-                  allWonders.map((aw) => (
-                    <button
-                      key={aw.id}
-                      id={aw.id}
-                      onClickCapture={selectWonder}
-                      className={`btnWonders ${
-                        selectedWonder &&
-                        selectedWonder.id === aw.id &&
-                        "activeWonder"
-                      }`}
-                    >
-                      <div className="btnDetails">{aw.icon[lang]}</div>
-                      <img src={`${CONFIGS.icons}/${aw.id}/64.png`}></img>
-                    </button>
-                  ))}
-              </div>
               {selectedWonder && (
                 <Wonder itemData={selectedWonder} lang={lang} />
               )}
