@@ -53,6 +53,8 @@
 }
 
 .btnDiv {
+  //   display: flex;
+  //   align-items: center;
   border: 2px solid rgb(146, 146, 146) !important;
   backdrop-filter: blur(1px);
   border-radius: 5px;
@@ -66,7 +68,7 @@
     background-color: transparent;
     font-size: 10px;
     padding: 0;
-    margin: 5px 5px;
+    margin: 0 5px;
     border: none;
     color: black;
     //   min-width: 100px;
@@ -90,14 +92,12 @@
     }
     &:hover,
     &.activeWonder {
-      transform: scale(1);
+      transform: scale(0.9);
       box-shadow: 0 -10px 10px #00000088;
       .btnDetails {
         visibility: visible;
+        font-weight: bold;
       }
-    }
-    &.activeWonder {
-      font-weight: bold;
     }
   }
 }

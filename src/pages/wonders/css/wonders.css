@@ -57,7 +57,7 @@
   background-color: transparent;
   font-size: 10px;
   padding: 0;
-  margin: 5px 5px;
+  margin: 0 5px;
   border: none;
   color: black;
   transform: scale(0.5);
@@ -70,12 +70,10 @@
   transform: scale(0.8);
 }
 .btnDiv .btnWonders:hover, .btnDiv .btnWonders.activeWonder {
-  transform: scale(1);
+  transform: scale(0.9);
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.5333333333);
 }
 .btnDiv .btnWonders:hover .btnDetails, .btnDiv .btnWonders.activeWonder .btnDetails {
   visibility: visible;
-}
-.btnDiv .btnWonders.activeWonder {
   font-weight: bold;
 }

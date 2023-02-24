@@ -157,10 +157,10 @@ export default function Wonders() {
             <br />
             <ButtonGroup className="my-2" size="sm">
               <Button color="info" onClick={changePosition} id="top">
-                {metadata.labels.top[lang]}
+                {metadata && metadata.labels.top[lang]}
               </Button>
               <Button color="warning" onClick={changePosition} id="bottom">
-                {metadata.labels.bottom[lang]}
+                {metadata && metadata.labels.bottom[lang]}
               </Button>
               {/* <Button color="success" disabled>
                 {metadata.labels.left[lang]}
