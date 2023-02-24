@@ -71,21 +71,27 @@
     color: black;
     //   min-width: 100px;
     // transform: translate(-50%);
-    transform: scale(0.6);
+    transform: scale(0.5);
     transition: all 0.9s ease;
     .btnDetails {
       visibility: hidden;
+    }
+    // &:has(+ .btnWonders:hover),
+    // &:has(+ .activeWonder),
+    // &:hover + .btnWonders,
+    // &.activeWonder + .btnWonders {
+    //   //   background: green;
+    //   transform: scale(0.6);
+    //   transition: all 2s ease;
+    // }
+    &:hover ~ .activeWonder,
+    &.activeWonder:has(~ .btnWonders:hover) {
+      transform: scale(0.8);
     }
     &:hover,
     &.activeWonder {
       transform: scale(1);
       box-shadow: 0 -10px 10px #00000088;
-      //   &:first-child {
-      //     box-shadow: -10px 0px 10px #00000088;
-      //   }
-      //   &:last-child {
-      //     box-shadow: 10px 0px 10px #00000088 !important;
-      //   }
       .btnDetails {
         visibility: visible;
       }

@@ -60,11 +60,14 @@
   margin: 5px 5px;
   border: none;
   color: black;
-  transform: scale(0.6);
+  transform: scale(0.5);
   transition: all 0.9s ease;
 }
 .btnDiv .btnWonders .btnDetails {
   visibility: hidden;
+}
+.btnDiv .btnWonders:hover ~ .activeWonder, .btnDiv .btnWonders.activeWonder:has(~ .btnWonders:hover) {
+  transform: scale(0.8);
 }
 .btnDiv .btnWonders:hover, .btnDiv .btnWonders.activeWonder {
   transform: scale(1);
