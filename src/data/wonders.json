@@ -20,7 +20,11 @@
       { "name": "Ngure Brian", "adm": "SCT313-0919/2022" }
     ],
     "labels": {
-      "credits": { "en": "Credits", "sw": "Vibali" }
+      "credits": { "en": "Credits", "sw": "Vibali" },
+      "top": { "en": "Top", "sw": "Juu" },
+      "bottom": { "en": "Bottom", "sw": "Chini" },
+      "left": { "en": "Left", "sw": "Kushoto" },
+      "right": { "en": "Right", "sw": "Kulia" }
     }
   },
   "data": [
