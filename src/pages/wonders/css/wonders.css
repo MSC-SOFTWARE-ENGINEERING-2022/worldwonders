@@ -20,7 +20,7 @@
   line-height: 1em;
 }
 .wonders .wonderCol {
-  margin-top: 20px;
+  margin: 20px auto;
 }
 .wonders .wonderCol .card {
   margin: 0 auto !important;
@@ -33,7 +33,7 @@
 .wonders .controlCol {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .containerMain {

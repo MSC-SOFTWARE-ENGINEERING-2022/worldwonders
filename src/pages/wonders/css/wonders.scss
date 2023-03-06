@@ -26,7 +26,7 @@
     line-height: 1em;
   }
   .wonderCol {
-    margin-top: 20px;
+    margin: 20px auto;
     .card {
       margin: 0 auto !important;
     }
@@ -39,7 +39,7 @@
   .controlCol {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
