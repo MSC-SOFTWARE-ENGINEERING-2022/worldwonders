@@ -24,7 +24,8 @@
       "top": { "en": "Top", "sw": "Juu" },
       "bottom": { "en": "Bottom", "sw": "Chini" },
       "left": { "en": "Left", "sw": "Kushoto" },
-      "right": { "en": "Right", "sw": "Kulia" }
+      "right": { "en": "Right", "sw": "Kulia" },
+      "readmore": { "en": "Read More", "sw": "Soma Zaidi" }
     }
   },
   "data": [

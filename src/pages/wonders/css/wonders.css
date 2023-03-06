@@ -19,6 +19,9 @@
   text-align: center;
   line-height: 1em;
 }
+.wonders .wonderCol {
+  margin-top: 20px;
+}
 .wonders .wonderCol .card {
   margin: 0 auto !important;
 }
@@ -26,6 +29,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.wonders .controlCol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .containerMain {
@@ -77,3 +85,5 @@
   visibility: visible;
   font-weight: bold;
 }
+
+/***************************************************/

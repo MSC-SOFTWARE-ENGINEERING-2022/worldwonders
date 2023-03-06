@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
-function CustomModal({ btnName, modalBd }, args) {
+function CustomModal({ btnObj, modalBd }, args) {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
 
   return (
     <div>
-      <Button color="danger" className="my-2" size="sm" onClick={toggle}>
-        {btnName}
+      <Button
+        color={btnObj.color || "danger"}
+        className={`${btnObj.class} my-2`}
+        size="sm"
+        onClick={toggle}
+      >
+        {btnObj.name}
       </Button>
       <Modal isOpen={modal} toggle={toggle} {...args}>
         <ModalHeader toggle={toggle}></ModalHeader>

@@ -104,27 +104,35 @@ export default function Wonders() {
 
   const contentRow = (
     <Col
-      className="bg-light border btnCol"
+      className="bg-light border wonderCol"
       lg={{
         offset: 3,
         size: 6,
       }}
       sm="12"
     >
-      <Container
+      {/* <Container
         className="containerMain"
-        style={{
-          backgroundImage: `url(${selectedWonder.image})`,
-        }}
-      >
-        {selectedWonder && <Wonder itemData={selectedWonder} lang={lang} />}
-      </Container>
+        // style={{
+        //   backgroundImage: `url(${selectedWonder.image})`,
+        // }}
+      > */}
+      {selectedWonder && (
+        <Wonder metadata={metadata} itemData={selectedWonder} lang={lang} />
+      )}
+      {/* </Container> */}
     </Col>
   );
 
+  // return (
+  //   <Container className="wonders bg-light border" fluid>
+  //     <Row>{contentRow}</Row>
+  //   </Container>
+  // );
+
   return (
     <>
-      <Container className=" wonders bg-light border" fluid>
+      <Container className="wonders bg-light border" fluid>
         <Row>
           <Col
             className="bg-light border"
@@ -139,13 +147,17 @@ export default function Wonders() {
         </Row>
         <Row>
           <Col
-            className="bg-light border"
+            className="bg-light border controlCol"
             lg={{
-              offset: 3,
-              size: 6,
+              offset: 5,
+              size: 2,
             }}
             sm="12"
           >
+            <CustomModal
+              btnObj={{ name: metadata && metadata.labels.credits[lang] }}
+              modalBd={metadata && modalBd(metadata, lang)}
+            />
             <ButtonGroup className="my-2" size="sm">
               <Button color={checkLangColor("sw")} id="sw" onClick={changeLang}>
                 SW
@@ -154,7 +166,6 @@ export default function Wonders() {
                 EN
               </Button>
             </ButtonGroup>
-            <br />
             <ButtonGroup className="my-2" size="sm">
               <Button color="info" onClick={changePosition} id="top">
                 {metadata && metadata.labels.top[lang]}
@@ -173,7 +184,7 @@ export default function Wonders() {
         </Row>
         <Row>{position === "top" ? menuRow : contentRow}</Row>
         <Row>{position === "top" ? contentRow : menuRow}</Row>
-        <Row>
+        {/* <Row>
           <Col
             className="bg-light border"
             lg={{
@@ -187,7 +198,7 @@ export default function Wonders() {
               modalBd={metadata && modalBd(metadata, lang)}
             />
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );
