@@ -50,11 +50,11 @@
 }
 
 .btnDiv {
-  border: 2px solid rgb(146, 146, 146) !important;
+  border: 0px solid rgb(146, 146, 146) !important;
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.507);
+  border-radius: 10px;
+  background-color: #fff;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 .btnDiv:hover {
