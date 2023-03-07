@@ -67,7 +67,6 @@ export default function Wonders() {
 
   useEffect(() => {
     // console.log("useEffect response", wondersData);
-    // console.log(CONFIGS.icons);
     const datos = wondersData.default.data;
     setMetadata(wondersData.default.metadata);
     setAllWonders(datos);
@@ -107,28 +106,15 @@ export default function Wonders() {
       className="bg-light border wonderCol"
       lg={{
         offset: 3,
-        size: 6,
+        size: 9,
       }}
       sm="12"
     >
-      {/* <Container
-        className="containerMain"
-        // style={{
-        //   backgroundImage: `url(${selectedWonder.image})`,
-        // }}
-      > */}
       {selectedWonder && (
         <Wonder metadata={metadata} itemData={selectedWonder} lang={lang} />
       )}
-      {/* </Container> */}
     </Col>
   );
-
-  // return (
-  //   <Container className="wonders bg-light border" fluid>
-  //     <Row>{contentRow}</Row>
-  //   </Container>
-  // );
 
   return (
     <>
@@ -149,8 +135,12 @@ export default function Wonders() {
           <Col
             className="bg-light border controlCol"
             lg={{
-              offset: 5,
-              size: 2,
+              offset: 4,
+              size: 4,
+            }}
+            md={{
+              offset: 3,
+              size: 6,
             }}
             sm="12"
           >
@@ -173,32 +163,11 @@ export default function Wonders() {
               <Button color="warning" onClick={changePosition} id="bottom">
                 {metadata && metadata.labels.bottom[lang]}
               </Button>
-              {/* <Button color="success" disabled>
-                {metadata.labels.left[lang]}
-              </Button>
-              <Button color="danger" disabled>
-                {metadata.labels.right[lang]}
-              </Button> */}
             </ButtonGroup>
           </Col>
         </Row>
         <Row>{position === "top" ? menuRow : contentRow}</Row>
         <Row>{position === "top" ? contentRow : menuRow}</Row>
-        {/* <Row>
-          <Col
-            className="bg-light border"
-            lg={{
-              offset: 3,
-              size: 6,
-            }}
-            sm="12"
-          >
-            <CustomModal
-              btnName={metadata && metadata.labels.credits[lang]}
-              modalBd={metadata && modalBd(metadata, lang)}
-            />
-          </Col>
-        </Row> */}
       </Container>
     </>
   );
