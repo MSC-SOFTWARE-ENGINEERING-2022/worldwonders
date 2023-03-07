@@ -133,7 +133,7 @@ export default function Wonders() {
         </Row>
         <Row>
           <Col
-            className="bg-light border controlCol"
+            className="controlCol"
             lg={{
               offset: 4,
               size: 4,
