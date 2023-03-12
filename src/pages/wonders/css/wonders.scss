@@ -37,11 +37,21 @@
     background-color: #fff;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     .btn {
-      line-height: 1em !important;
+      line-height: 0.9em !important;
       height: 20px !important;
-      font-size: 12px;
+      min-width: 50px !important;
+      font-size: 12.5px;
       text-align: center;
-      // font-weight: bold;
+      // font-weight: bolder;
+      background-color: transparent;
+      color: #383838;
+      &:not(.active):hover {
+        background-color: #e6f5ffd8;
+      }
+      &.active {
+        background-color: #b3b3b3 !important;
+        color: #fff;
+      }
     }
   }
 }

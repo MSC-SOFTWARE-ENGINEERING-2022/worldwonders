@@ -29,8 +29,6 @@ export default function Wonders() {
     }
   };
 
-  const checkLangColor = (item) => (item === lang ? "success" : "secondary");
-
   const selectWonder = (event) => {
     // console.log(event);
     event.stopPropagation();
@@ -145,22 +143,41 @@ export default function Wonders() {
             sm="12"
           >
             <CustomModal
-              btnObj={{ name: metadata && metadata.labels.credits[lang] }}
+              btnObj={{
+                name: metadata && metadata.labels.credits[lang],
+                color: "primary",
+              }}
               modalBd={metadata && modalBd(metadata, lang)}
             />
             <ButtonGroup className="my-2" size="sm">
-              <Button color={checkLangColor("sw")} id="sw" onClick={changeLang}>
+              <Button
+                className={`btnLangs ${lang === "sw" && "active"}`}
+                id="sw"
+                onClick={changeLang}
+              >
                 SW
               </Button>
-              <Button color={checkLangColor("en")} id="en" onClick={changeLang}>
+              <Button
+                className={`btnLangs ${lang === "en" && "active"}`}
+                id="en"
+                onClick={changeLang}
+              >
                 EN
               </Button>
             </ButtonGroup>
             <ButtonGroup className="my-2" size="sm">
-              <Button color="info" onClick={changePosition} id="top">
+              <Button
+                className={`btnPositions ${position === "top" && "active"}`}
+                onClick={changePosition}
+                id="top"
+              >
                 {metadata && metadata.labels.top[lang]}
               </Button>
-              <Button color="warning" onClick={changePosition} id="bottom">
+              <Button
+                className={`btnPositions ${position === "bottom" && "active"}`}
+                onClick={changePosition}
+                id="bottom"
+              >
                 {metadata && metadata.labels.bottom[lang]}
               </Button>
             </ButtonGroup>

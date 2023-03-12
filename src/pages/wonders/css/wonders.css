@@ -32,10 +32,20 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 .wonders .controlCol .btn {
-  line-height: 1em !important;
+  line-height: 0.9em !important;
   height: 20px !important;
-  font-size: 12px;
+  min-width: 50px !important;
+  font-size: 12.5px;
   text-align: center;
+  background-color: transparent;
+  color: #383838;
+}
+.wonders .controlCol .btn:not(.active):hover {
+  background-color: rgba(230, 245, 255, 0.8470588235);
+}
+.wonders .controlCol .btn.active {
+  background-color: #b3b3b3 !important;
+  color: #fff;
 }
 
 .containerMain {

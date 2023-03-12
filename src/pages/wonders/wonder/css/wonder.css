@@ -24,7 +24,7 @@
   .blog-slider {
     min-height: 500px;
     height: auto;
-    margin: 150px auto;
+    margin: 110px auto 10px auto;
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
