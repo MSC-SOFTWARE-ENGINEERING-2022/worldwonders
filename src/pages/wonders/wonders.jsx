@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
-import { Container, Col, Row, Button, ButtonGroup } from "reactstrap";
-import { CONFIGS, DEPE } from "../../helpers";
+import { Container, Col, Row } from "reactstrap";
 import * as wondersData from "../../data/wonders.json";
-import "./css/wonders.css";
 import Wonder from "./wonder/wonder";
 import { CustomModal } from "../../components";
+import LangControls from "./lang/lang";
+import PositionControls from "./position/position";
+import Header from "./header/header";
+import Menu from "./menu/menu";
+
+import "./css/wonders.css";
 
 export default function Wonders() {
   const [allWonders, setAllWonders] = useState([]);
@@ -72,36 +76,17 @@ export default function Wonders() {
   }, []);
 
   const menuRow = (
-    <Col
-      className="bg-light border btnCol"
-      lg={{
-        offset: 3,
-        size: 6,
-      }}
-      sm="12"
-    >
-      <div className="btnDiv">
-        {allWonders &&
-          allWonders.map((aw) => (
-            <button
-              key={aw.id}
-              id={aw.id}
-              onClickCapture={selectWonder}
-              className={`btnWonders ${
-                selectedWonder && selectedWonder.id === aw.id && "activeWonder"
-              }`}
-            >
-              <div className="btnDetails">{aw.icon[lang]}</div>
-              <img src={`${CONFIGS.icons}/${aw.id}/64.png`}></img>
-            </button>
-          ))}
-      </div>
-    </Col>
+    <Menu
+      allWonders={allWonders}
+      selectWonder={selectWonder}
+      selectedWonder={selectedWonder}
+      lang={lang}
+    />
   );
 
   const contentRow = (
     <Col
-      className="bg-light border wonderCol"
+      className="bg-light wonderCol"
       lg={{
         offset: 3,
         size: 9,
@@ -116,18 +101,9 @@ export default function Wonders() {
 
   return (
     <>
-      <Container className="wonders bg-light border" fluid>
+      <Container className="wonders bg-light" fluid>
         <Row>
-          <Col
-            className="bg-light border"
-            lg={{
-              offset: 3,
-              size: 6,
-            }}
-            sm="12"
-          >
-            <p className="title">{metadata && metadata.header[lang]}</p>
-          </Col>
+          <Header metadata={metadata} lang={lang} />
         </Row>
         <Row>
           <Col
@@ -149,38 +125,13 @@ export default function Wonders() {
               }}
               modalBd={metadata && modalBd(metadata, lang)}
             />
-            <ButtonGroup className="my-2" size="sm">
-              <Button
-                className={`btnLangs ${lang === "sw" && "active"}`}
-                id="sw"
-                onClick={changeLang}
-              >
-                SW
-              </Button>
-              <Button
-                className={`btnLangs ${lang === "en" && "active"}`}
-                id="en"
-                onClick={changeLang}
-              >
-                EN
-              </Button>
-            </ButtonGroup>
-            <ButtonGroup className="my-2" size="sm">
-              <Button
-                className={`btnPositions ${position === "top" && "active"}`}
-                onClick={changePosition}
-                id="top"
-              >
-                {metadata && metadata.labels.top[lang]}
-              </Button>
-              <Button
-                className={`btnPositions ${position === "bottom" && "active"}`}
-                onClick={changePosition}
-                id="bottom"
-              >
-                {metadata && metadata.labels.bottom[lang]}
-              </Button>
-            </ButtonGroup>
+            <LangControls changeLang={changeLang} lang={lang} />
+            <PositionControls
+              changePosition={changePosition}
+              position={position}
+              lang={lang}
+              metadata={metadata}
+            />
           </Col>
         </Row>
         <Row>{position === "top" ? menuRow : contentRow}</Row>

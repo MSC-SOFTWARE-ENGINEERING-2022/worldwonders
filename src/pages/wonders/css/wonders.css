@@ -1,14 +1,12 @@
-.col,
-.border,
-.bg-light {
-  border: none !important;
-  background: none !important;
-  opacity: 1;
+.wonders {
+  min-height: 99svh;
 }
-
+.wonders * {
+  font-family: sans-serif;
+}
 .wonders .title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 18px;
   font-weight: bold;
 }
 .wonders .wonderCol {
@@ -97,5 +95,3 @@
   visibility: visible;
   font-weight: bold;
 }
-
-/***************************************************/

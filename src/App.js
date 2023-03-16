@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import Wonders from './pages/wonders/wonders';
+import { Wonders } from "./pages/";
+import "./App.css";
 
 function App() {
   return (
