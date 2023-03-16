@@ -6,7 +6,14 @@ Open the **terminal/cmd** in the folder
 Type the command
 
 ```sh
+npm i
 npm start
+```
+
+in case of dependency errors run the following command then restart
+
+```sh
+npm audit fix --force
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
